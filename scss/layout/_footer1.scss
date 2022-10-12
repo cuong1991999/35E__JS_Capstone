@@ -1,0 +1,24 @@
+.footer__top {
+  padding-top: 30px;
+  margin-bottom: 20px;
+  li {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: orange;
+  }
+}
+.footer__bottom {
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  background-color: #ececec;
+  a {
+    text-decoration: none;
+    color: orange;
+  }
+}
