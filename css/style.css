@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #000;
+}
+header .header {
+  line-height: 50px;
+}
+header .header .header__img {
+  width: 100px;
+  height: 30px;
+}
+header .header .header__validation a {
+  display: inline-block;
+  color: #f6f6f6;
+  text-decoration: none;
+  margin-left: 10px;
+}
+header .header .header__validation a span {
+  font-size: 20px;
+}
+header .header .header__validation a .header__validation-img {
+  width: 25px;
+  height: 25px;
+}
+
+.menu {
+  background-color: #f5f5f5;
+}
+.menu .menu__list {
+  margin: 0;
+}
+.menu .menu__list .menu__item {
+  margin-right: 20px;
+  line-height: 35px;
+}
+.menu .menu__list .menu__item.active a {
+  font-weight: 400;
+}
+.menu .menu__list .menu__item.active a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.menu .menu__list .menu__item a {
+  transition: all 0.5s;
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+}
+.menu .menu__list .menu__item a::after {
+  content: "";
+  transition: all 0.5s;
+  display: block;
+  width: 0;
+  border-bottom: 1px solid #000;
+}
+.menu .menu__list .menu__item:hover a {
+  font-weight: 400;
+}
+.menu .menu__list .menu__item:hover a::after {
+  width: 100%;
+}
+
+.carousel {
+  background-image: url(../img/f9ebca7dbf6f82f47b04b073782bb7fb.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+.carousel .carousel__title {
+  margin: auto 0;
+}
+.carousel .carousel__title .carousel__btn {
+  background-color: #F8B653;
+  padding: 10px 25px;
+}
+
+.productfeature {
+  padding: 30px 0;
+  background-color: #f5f5f5;
+}
+.productfeature .card {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: #f8f8f8;
+}
+.productfeature .card img {
+  width: 200px;
+}
+.productfeature .card a {
+  cursor: pointer;
+}
+.productfeature .card a .card__icon {
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  cursor: pointer;
+}
+.productfeature .card .card__img {
+  width: 200px;
+  margin: auto;
+}
+.productfeature .card .card-body {
+  padding: 1.25rem 1.25rem 0;
+}
+.productfeature .card .card-body .card__compon {
+  margin: 0 -20px;
+}
+.productfeature .card .card-body .card__compon .card__item {
+  width: 50%;
+}
+.productfeature .card .card-body .card__compon .card__item.card__item-text {
+  background-color: #dedddc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productfeature .card .card-body .card__compon .card__item .card__btn {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: #e1b067;
+}
+
+@media (max-width: 768px) {
+  .productfeature #renderproduct .card .card-body h6 {
+    font-size: 14px;
+  }
+  .productfeature #renderproduct .card .card-body p {
+    font-size: 12px;
+  }
+}
+.footer__top {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+.footer__top li a {
+  text-decoration: none;
+  color: #000;
+}
+.footer__top a {
+  text-decoration: none;
+  color: orange;
+}
+
+.footer__bottom {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #ececec;
+}
+.footer__bottom a {
+  text-decoration: none;
+  color: orange;
+}/*# sourceMappingURL=style.css.map */
