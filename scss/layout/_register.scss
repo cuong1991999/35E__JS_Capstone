@@ -1,0 +1,43 @@
+.register_title {
+    .text-center {
+        margin: 30px 0;
+    }
+}
+
+.form-group {
+    border-bottom: #AE18E2 solid 7px ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    input {
+        border: none;
+        padding-right: 120px;
+    }
+
+    .text-danger {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+}
+
+.reCheck {
+    border: none;
+    margin-top: 30px;
+    label {
+        margin-left: 20px;
+    }
+}
+
+
+.btnTK {
+    margin-top: 20px;
+    padding: 7px 80px;
+    border: none;
+    font-size: 2rem;
+    background: #AE18E2;
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+

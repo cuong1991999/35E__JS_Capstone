@@ -168,4 +168,225 @@ header .header .header__validation a .header__validation-img {
 .footer__bottom a {
   text-decoration: none;
   color: orange;
+}
+
+header {
+  background-color: #000;
+}
+header .header {
+  line-height: 50px;
+}
+header .header .header__img {
+  width: 100px;
+  height: 30px;
+}
+header .header .header__validation a {
+  display: inline-block;
+  color: #f6f6f6;
+  text-decoration: none;
+  margin-left: 10px;
+}
+header .header .header__validation a span {
+  font-size: 20px;
+}
+header .header .header__validation a .header__validation-img {
+  width: 25px;
+  height: 25px;
+}
+
+.menu {
+  background-color: #f5f5f5;
+}
+.menu .menu__list {
+  margin: 0;
+}
+.menu .menu__list .menu__item {
+  margin-right: 20px;
+  line-height: 35px;
+}
+.menu .menu__list .menu__item.active a {
+  font-weight: 400;
+}
+.menu .menu__list .menu__item.active a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.menu .menu__list .menu__item a {
+  transition: all 0.5s;
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+}
+.menu .menu__list .menu__item a::after {
+  content: "";
+  transition: all 0.5s;
+  display: block;
+  width: 0;
+  border-bottom: 1px solid #000;
+}
+.menu .menu__list .menu__item:hover a {
+  font-weight: 400;
+}
+.menu .menu__list .menu__item:hover a::after {
+  width: 100%;
+}
+
+.product {
+  display: flex;
+}
+
+.imgProduct {
+  margin: 58px 0 117px 45px;
+}
+
+.contentProduct {
+  padding-left: 80px;
+  padding-right: 200px;
+}
+.contentProduct h1 {
+  margin-top: 67px;
+  font-size: 2rem;
+}
+.contentProduct h3 {
+  color: #1ED90E;
+  font-size: 1.7rem;
+}
+.contentProduct button {
+  margin-bottom: 10px;
+  padding: 10px 40px;
+  font-size: 2rem;
+  color: white;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  border: none;
+  cursor: pointer;
+}
+
+.size {
+  display: flex;
+}
+.size li {
+  margin-right: 20px;
+  background-color: #CCCCCC;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+h2 {
+  color: red;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.addToCart {
+  display: flex;
+}
+.addToCart button {
+  margin-top: 0;
+  padding: 0 30px;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  height: 70px;
+}
+.addToCart p {
+  font-size: 2rem;
+  padding: 10px 30px;
+}
+
+.realateProduct {
+  padding: 30px 0;
+  background-color: #f5f5f5;
+}
+.realateProduct .card {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: #f8f8f8;
+}
+.realateProduct .card img {
+  width: 200px;
+}
+.realateProduct .card a {
+  cursor: pointer;
+}
+.realateProduct .card a .card__icon {
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  cursor: pointer;
+}
+.realateProduct .card .card__img {
+  width: 200px;
+  margin: auto;
+}
+.realateProduct .card .card-body {
+  padding: 1.25rem 1.25rem 0;
+}
+.realateProduct .card .card-body .card__compon {
+  margin: 0 -20px;
+}
+.realateProduct .card .card-body .card__compon .card__item {
+  width: 50%;
+}
+.realateProduct .card .card-body .card__compon .card__item.card__item-text {
+  background-color: #dedddc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.realateProduct .card .card-body .card__compon .card__item .card__btn {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: #e1b067;
+}
+
+@media (max-width: 768px) {
+  .realateProduct #renderproduct .card .card-body h6 {
+    font-size: 14px;
+  }
+  .realateProduct #renderproduct .card .card-body p {
+    font-size: 12px;
+  }
+}
+.register_title .text-center {
+  margin: 30px 0;
+}
+
+.form-group {
+  border-bottom: #AE18E2 solid 7px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.form-group input {
+  border: none;
+  padding-right: 120px;
+}
+.form-group .text-danger {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.reCheck {
+  border: none;
+  margin-top: 30px;
+}
+.reCheck label {
+  margin-left: 20px;
+}
+
+.btnTK {
+  margin-top: 20px;
+  padding: 7px 80px;
+  border: none;
+  font-size: 2rem;
+  background: #AE18E2;
+  color: white;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

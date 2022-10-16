@@ -15,10 +15,150 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
+  <!-- Header  -->
+    <header>
+        <div class="container">
+          <div class="header d-flex align-items-center justify-content-between">
+            <div>
+              <img src="./img/c255c800e61e47ec7698ffdc99e50a95.png" alt="" class="header__img" />
+            </div>
+            <div class="header__validation d-flex align-items-center">
+              <a href="#" class="d-flex align-items-center">
+                <img src="./img/5b7f1635f1ce04fe2149c056a8e340c9.png" alt="" class="header__validation-img">
+                <span>(1)</span>
+              </a>
+              <a href="#">Login</a>
+              <a href="./register.html?">Register</a>
+            </div>
+          </div>
+        </div>
+    </header>
+      <section class="menu">
+        <div class="container">
+          <ul class="menu__list d-flex align-items-center justify-content-start">
+            <li class="menu__item active"><a href="./index.html?">Home</a></li>
+            <li class="menu__item"><a href="#">Men</a></li>
+            <li class="menu__item"><a href="#">Woman</a></li>
+            <li class="menu__item"><a href="#">Kid</a></li>
+            <li class="menu__item"><a href="#">Sport</a></li>
+          </ul>
+        </div>
+      </section>
+
+  <!-- Register  -->
+      <section class="register">
+        <div class="container">
+          <form class="register_title">
+            <h1 class="text-center">Register</h1>
+            <div class="row">
+              <div class="col-6 form-left">
+                <div class="form-group ">
+                  <input type="text" placeholder="email" class="" id="email">
+                  <small class=" text-danger">(*)</small>
+                  <div class="text-danger" id="errorEmail"></div>
+                </div>
+                <div class="form-group ">
+                  <input type="password" placeholder="password" class="" id="password">
+                  <small class=" text-danger">(*)</small>
+                  <div class="text-danger" id="errorPassword"></div>
+                </div>
+                <div class="form-group ">
+                  <input type="password" placeholder="password confirm" class="" id="rePassword">
+                  <small class=" text-danger">(*)</small>
+                  <div class="text-danger" id="errorRePassword"></div>
+                </div>
+              </div>
+              <div class="col-6 form-right">
+                <div class="form-group ">
+                  <input type="text" placeholder="name" class="" id="name">
+                  <small class=" text-danger">(*)</small>
+                  <div class="text-danger" id="errorName"></div>
+                </div>
+                <div class="form-group ">
+                  <input type="text" placeholder="phone" class="" id="phone">
+                  <small class=" text-danger">(*)</small>
+                  <div class="text-danger" id="errorPhone"></div>
+                </div>
+                <div class="form-group d-flex reCheck">
+                  <div class="gender">Gender</div>
+                  <div class="radio d-flex">
+                    <input id="radio-1" name="radio" type="radio" value="true" checked="checked" >
+                    <label for="radio-1" class="radio-label"  style="cursor: pointer;">Male</label>
+                  </div>
+                  <div class="radio d-flex">
+                    <input id="radio-2" name="radio" type="radio" value="false" >
+                    <label for="radio-2" class="radio-label"  style="cursor: pointer;">Female</label>
+                  </div>
+                  <div class="text-danger " id="erroGender"></div>
+                </div>
+                <button type="submit" class="btnTK" onclick="taoTaiKhoan()" id="btnTaoTK">Submit</button>
+    
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    <!-- Footer  -->
+    <footer class="footer__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h4>GET HELP</h4>
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Shopping</a></li>
+              <li><a href="#">NIKED</a></li>
+              <li><a href="#">NIKE+</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>ORDERS</h4>
+            <ul>
+              <li><a href="#">Payment options</a></li>
+              <li><a href="#">Shipping and delivery</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>REGISTER</h4>
+            <p>
+              Create one account to manage everything you do with Nike, from
+              your shopping preferences to your Nike+ activity.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h4>EMAIL SIGN UP</h4>
+            <p>Be the first to know about new products and special offers.</p>
+            <a href="#">Sign up now</a>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>GIFT CARDS</h4>
+            <p>Give the gift that always fits.</p>
+            <a href="#">View cards</a>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>STORES NEAR YOU</h4>
+            <p>Locate a Nike retail store or authorized retailer.</p>
+            <a href="#">Seach</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
